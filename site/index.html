@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Maison Demeusy — L'Art de la Boulangerie Française depuis 1922</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-bright": "#fcf9f8",
+        "surface-container-lowest": "#ffffff",
+        "on-surface": "#1c1b1b",
+        "on-primary": "#ffffff",
+        "primary-container": "#ff8200",
+        "outline": "#8b7263",
+        "surface-container-high": "#ebe7e7",
+        "primary-fixed": "#ffdcc6",
+        "primary": "#954a00",
+        "primary-fixed-dim": "#ffb785",
+        "surface": "#fcf9f8",
+        "surface-container-low": "#f6f3f2",
+        "outline-variant": "#dec1af",
+        "surface-variant": "#e5e2e1",
+        "surface-container-highest": "#e5e2e1",
+        "surface-dim": "#dcd9d9",
+        "on-primary-container": "#5f2c00",
+        "inverse-primary": "#ffb785",
+        "inverse-surface": "#313030",
+        "inverse-on-surface": "#f3f0ef",
+        "surface-tint": "#954a00",
+        "on-surface-variant": "#574235",
+        "surface-container": "#f0edec",
+        "on-error-container": "#93000a",
+        "error": "#ba1a1a",
+      },
+      fontFamily: {
+        headline: ["Noto Serif", "serif"],
+        body: ["Work Sans", "sans-serif"],
+        label: ["Inter", "sans-serif"],
+      },
+      borderRadius: {
+        DEFAULT: "0.125rem",
+        lg: "0.25rem",
+        xl: "0.75rem",
+        full: "9999px",
+      },
+    },
+  },
+};
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  html { scroll-behavior: smooth; }
+  .hero-gradient { background: linear-gradient(to bottom, rgba(28,27,27,0.60) 0%, rgba(28,27,27,0.35) 40%, rgba(28,27,27,0.70) 75%, rgba(28,27,27,0.85) 100%); }
+  .honey-gradient { background: linear-gradient(45deg, #954a00, #ff8200); }
+  .heritage-shadow { box-shadow: 0 20px 40px rgba(28,27,27,0.06); }
+  .fade-in { animation: fadeIn 0.8s ease-out both; }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+  .nav-link { position: relative; }
+  .nav-link::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:2px; background:#954a00; transition:width 0.3s ease; }
+  .nav-link:hover::after { width:100%; }
+  .nav-active::after { width:100% !important; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed-dim antialiased">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl transition-all duration-500">
+  <div class="flex justify-between items-center px-6 md:px-12 py-5 w-full max-w-[1920px] mx-auto">
+    <a href="index.html" class="text-2xl font-bold tracking-tighter text-on-surface font-headline">Maison Demeusy</a>
+    <div class="hidden lg:flex items-center gap-10">
+      <a class="nav-link nav-active font-headline tracking-widest uppercase text-xs text-primary pb-1" href="index.html">Accueil</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="nos-creations.html">Nos Créations</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="notre-histoire.html">Histoire & Valeurs</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="nos-points-de-vente.html">Nos Maisons</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="franchise.html">Franchise</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="recrutement.html">Recrutement</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="contact.html">Contact</a>
+    </div>
+    <div class="flex items-center">
+      <button class="material-symbols-outlined text-on-surface hover:text-primary transition-colors lg:hidden">menu</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+<!-- ============================================ -->
+<!-- HERO — Full-screen immersive -->
+<!-- ============================================ -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden pt-[8vh]">
+  <img alt="Pains artisanaux Demeusy" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqYJeQ9-eAHTHWTnbSJJxrE97rDwxk4S0goL_sx6socXCvdbF5AjDBze17rLh2kfNTZqKqlF5eQ0bQVUa6IHtFhB5MrVx12dt9sHhBkJqtSsiyLnBZ263MjTFVSLwRVMAoXMBy7FIQIhuqtSssw_nCVYvpqCWakzcvpjqiVRo_CWb9f0adeyPHx0by_5K9RkhaCEKCpfw-I7u3kEh4lBWHpd06WDjhpcBKupszJNbojOOiSdM6YShUmsgnz7BcXo1fNE55f0EiXLzl"/>
+  <div class="absolute inset-0 hero-gradient"></div>
+  <div class="relative z-10 text-center px-6 fade-in">
+    <span class="font-headline tracking-[0.4em] uppercase text-surface-bright/90 text-sm mb-6 block">Boulangeries & Pâtisseries depuis 1922</span>
+    <h1 class="font-headline text-4xl md:text-5xl lg:text-6xl text-white max-w-4xl leading-[1] mb-8 tracking-tight">
+      L'excellence de la<br/><span class="italic font-normal">tradition.</span>
+    </h1>
+    <p class="font-body text-white/90 text-base md:text-lg max-w-lg mx-auto mb-12 font-light leading-relaxed">Trois générations de savoir-faire artisanal au cœur du Territoire de Belfort.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a href="nos-creations.html" class="honey-gradient text-on-primary px-10 py-4 rounded-full font-semibold tracking-wide hover:opacity-90 transition-all duration-300 shadow-xl text-sm">
+        Découvrir nos créations
+      </a>
+      <a href="nos-points-de-vente.html" class="bg-white text-on-surface px-10 py-4 rounded-full font-semibold tracking-wide hover:bg-white/90 transition-all duration-300 text-sm">
+        Nos 13 boutiques
+      </a>
+    </div>
+  </div>
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60">
+    <span class="text-xs tracking-widest uppercase font-label">Défiler</span>
+    <span class="material-symbols-outlined animate-bounce text-sm">expand_more</span>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- PRODUITS DU MOMENT — Asymmetric Editorial Grid -->
+<!-- ============================================ -->
+<section class="py-24 md:py-32 bg-surface-container-low">
+  <div class="max-w-[1920px] mx-auto px-6 md:px-12">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-20 gap-8">
+      <div class="max-w-2xl">
+        <span class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-4 block">Saison</span>
+        <h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-6 leading-tight">Produits du Moment</h2>
+        <p class="text-on-surface-variant text-lg leading-relaxed font-light">Chaque saison, nos boulangers et pâtissiers créent des pièces uniques pour célébrer les moments forts de l'année.</p>
+      </div>
+      <a class="text-primary font-semibold flex items-center gap-2 group pb-1 hover:gap-3 transition-all text-sm" href="nos-creations.html">
+        Voir toute la collection
+        <span class="material-symbols-outlined text-base">arrow_forward</span>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+      <!-- Featured Product (large) -->
+      <div class="md:col-span-7 relative group">
+        <div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-highest">
+          <img alt="Entremets Fête des mères" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQXXLAFbvy5IWTch7V8z7K7oOfZEE-uclkWmN1awT6vzEztfU7Sta5SimRnnWUK4QCac_bNpIAQiw_RRNBVEPs4AxkJGvkpKVfPs4VzfH06YKOUnfMoL8WvhRePS3fln2-CMZj71YnifAubUCYH3czlY34zDk5xVsw46SJ87fFcSPm6FD1Jz4BSg1TIL48lLpoZsARgIpwCcpRRJeekWK-ieHu7k1PuB21dUbeNA07mMCkZTIURVz4XZhnWSPOYY6TpA92S2-jELhd"/>
+        </div>
+        <!-- Heritage Overlay — breaks the grid -->
+        <div class="absolute -bottom-6 right-4 md:-right-6 bg-surface-container-lowest p-8 md:p-10 rounded-xl heritage-shadow max-w-sm z-10">
+          <span class="text-primary font-bold tracking-widest uppercase text-xs mb-3 block">Édition Limitée</span>
+          <h3 class="font-headline text-2xl md:text-3xl mb-3">Entremets Fête des mères</h3>
+          <p class="text-on-surface-variant mb-5 text-sm leading-relaxed">Une alliance délicate de framboise fraîche et de vanille de Madagascar sur un biscuit croustillant.</p>
+          <a href="#" class="text-on-surface font-semibold flex items-center gap-2 hover:text-primary transition-colors text-sm">
+            Réserver en boutique
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Secondary Products -->
+      <div class="md:col-span-5 flex flex-col gap-10 pt-8 md:pt-0">
+        <div class="group">
+          <div class="aspect-video overflow-hidden rounded-xl mb-5">
+            <img alt="Brioche feuilletée pralinée noisette" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPQhdUGBuufWFKrKUKiS1pgqXJ6gJZCm4vnL6eq1DpiD6GY_KLxwDOhh9ikooXjkinLmM05VmSxtAg-teZqPJl-YvU5Hd_hPZ7C7DHtYdNsKspaT_U-LeXPXYsLTbxR_rHo-PpNZTN1-H0VC2NKcsLjRbZKH-m9naHrpEp9DvZrNTEphSapHo9cinU6bOnmWRlcDnGmBVeE47lzPtmEl07jtojX4Ain69HD448xrptqlRWLoYktPrq1lvAH2pYIQsy_Y2ZaAGk7CcM"/>
+          </div>
+          <h3 class="font-headline text-2xl mb-2">Brioche feuilletée pralinée noisette</h3>
+          <p class="text-on-surface-variant font-light">Le secret de notre feuilletage réside dans un repos de 24h et un beurre AOP d'exception.</p>
+        </div>
+        <div class="group">
+          <div class="aspect-video overflow-hidden rounded-xl mb-5">
+            <img alt="Éclair du mois — Coco Ananas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1Pl91zybLE6PH9HzxOYFUi7je2FPJnXo_yZtKOSuLN8s_xsr--aWZBpRmx7LdnnW2pSGg_Qt3HJvCpkGyx7_6Xp3eZ3IQEN3GOjNBcp6zFuFc1KgFts7d8RbMGFpU-3IUNzT1N0YzBbDYuoHaiDSWvA8q1S850EZ53lPkvTSQ7HXlYruaw20cgGB6n6BR5CgKcLewPTIbK1vFm5P8ccD1ieijvqsrLnO-W14HsIKLudeg36QmhiY88GhdiOHW0F1dAIVEl3OTgWYm"/>
+          </div>
+          <h3 class="font-headline text-2xl mb-2">Éclair du mois — Coco Ananas</h3>
+          <p class="text-on-surface-variant font-light">Notre éclair signature revisité chaque mois avec des saveurs de saison.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- HERITAGE BAND — Signature storytelling strip -->
+<!-- ============================================ -->
+<section class="bg-inverse-surface text-inverse-on-surface py-20 md:py-28 overflow-hidden">
+  <div class="max-w-[1920px] mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-5">
+        <span class="font-label text-primary-container uppercase tracking-[0.3em] text-xs mb-6 block">Notre Histoire</span>
+        <h2 class="font-headline text-4xl md:text-5xl leading-tight mb-8">Trois générations<br/><span class="italic font-normal">d'artisans boulangers.</span></h2>
+        <p class="text-inverse-on-surface/70 leading-relaxed mb-8 max-w-md">
+          Fondée par Louis Demeusy au retour de la Grande Guerre, la Maison perpétue depuis plus d'un siècle l'art du pain bien fait. De père en fils, de Belfort à Besançon, notre famille veille sur chaque fournée.
+        </p>
+        <a href="notre-histoire.html" class="inline-flex items-center gap-2 text-primary-container font-semibold hover:gap-3 transition-all text-sm">
+          Découvrir notre histoire
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
+      </div>
+      <div class="lg:col-span-7 grid grid-cols-3 gap-4">
+        <div class="flex flex-col gap-4">
+          <div class="bg-white/5 rounded-xl p-8 text-center">
+            <span class="font-headline text-5xl text-primary-container block mb-2">1922</span>
+            <span class="text-xs uppercase tracking-widest text-inverse-on-surface/50">Fondation</span>
+          </div>
+          <div class="aspect-[3/4] rounded-xl overflow-hidden">
+            <img alt="Fournil artisanal" class="w-full h-full object-cover grayscale opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw9RZWLJE9x2FcpmS5siGx0bxNLa0tDiHdXGJaiDXM__F8czdDcVrPRzSVKspX41ImV5AWVShF2ovhrpEemOHnhikPBFgoz0jg2RCeaujVWouotxE687egbvg9T9tS0pLaRZpkoULUDME6BguF8QAX7rhIAdojogCocSfbciwGpqRiG3lBUT332R5ETaduUwkGoShYyxGF0JwiiD_JuHEkgwIY2vDx5qZ8tOtALAF-yn8GTMFxGdHGLVhVpRWPyMSGgb87ZkKzWxcH"/>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 mt-8">
+          <div class="aspect-[3/4] rounded-xl overflow-hidden">
+            <img alt="Pain au levain" class="w-full h-full object-cover grayscale opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqYJeQ9-eAHTHWTnbSJJxrE97rDwxk4S0goL_sx6socXCvdbF5AjDBze17rLh2kfNTZqKqlF5eQ0bQVUa6IHtFhB5MrVx12dt9sHhBkJqtSsiyLnBZ263MjTFVSLwRVMAoXMBy7FIQIhuqtSssw_nCVYvpqCWakzcvpjqiVRo_CWb9f0adeyPHx0by_5K9RkhaCEKCpfw-I7u3kEh4lBWHpd06WDjhpcBKupszJNbojOOiSdM6YShUmsgnz7BcXo1fNE55f0EiXLzl"/>
+          </div>
+          <div class="bg-white/5 rounded-xl p-8 text-center">
+            <span class="font-headline text-5xl text-primary-container block mb-2">13</span>
+            <span class="text-xs uppercase tracking-widest text-inverse-on-surface/50">Boutiques</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div class="bg-primary-container/20 rounded-xl p-8 text-center">
+            <span class="font-headline text-5xl text-primary-container block mb-2">3</span>
+            <span class="text-xs uppercase tracking-widest text-inverse-on-surface/50">Générations</span>
+          </div>
+          <div class="aspect-[3/4] rounded-xl overflow-hidden">
+            <img alt="Boulanger au travail" class="w-full h-full object-cover grayscale opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiHL82s88tzAhm3SBKTHuB2C2KrSZgiTmNmyQk2LiC1V9VZ4qhbMdhoHvvp8dXzULBPGVrNcglNwlcW_8oS3CuJfUBkoQCjZMlB4NBmjrS7Hh_UtI0cRkLR3whbsYFdD35n8lMCm-9xFbUxW_AKwpy99ljINNBK3h-wZqupqWjM8LgoX5orT2hyNecM49F-cMGkhab4JQsBLXZdEGP6nog-0_eF8w1p6ff3zqk9bpBD5UYVBpBGOFWL50x2JqdBQfMlkd__1wXfu1D"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- NOS MAISONS — Featured stores bento grid -->
+<!-- ============================================ -->
+<section class="py-24 md:py-32 bg-surface">
+  <div class="max-w-[1920px] mx-auto px-6 md:px-12">
+    <div class="text-center mb-16 md:mb-20">
+      <span class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-4 block">13 Boutiques</span>
+      <h2 class="font-headline text-4xl md:text-5xl mb-6">Nos Maisons</h2>
+      <p class="text-on-surface-variant max-w-xl mx-auto font-light">De Belfort à Besançon, retrouvez l'excellence Demeusy dans chacune de nos boutiques.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- Flagship -->
+      <div class="md:col-span-2 md:row-span-2 bg-surface-container-low rounded-xl p-8 md:p-10 flex flex-col justify-between group hover:bg-surface-container transition-colors duration-500 min-h-[420px]">
+        <div>
+          <div class="flex justify-between items-start mb-10">
+            <span class="material-symbols-outlined text-4xl text-primary">storefront</span>
+            <span class="bg-primary/10 text-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Historique</span>
+          </div>
+          <h3 class="font-headline text-3xl md:text-4xl mb-4">Belfort Anatole</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-8">Notre boutique historique au cœur de Belfort, proposant l'intégralité de nos gammes boulangerie et pâtisserie fine.</p>
+        </div>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 text-on-surface-variant text-sm">
+            <span class="material-symbols-outlined text-sm">location_on</span>
+            <span>10 Boulevard Anatole France, Belfort</span>
+          </div>
+          <div class="flex items-center gap-3 text-on-surface-variant text-sm">
+            <span class="material-symbols-outlined text-sm">call</span>
+            <span>03 84 21 02 43</span>
+          </div>
+          <div class="flex items-center gap-3 text-on-surface-variant text-sm">
+            <span class="material-symbols-outlined text-sm">schedule</span>
+            <span>Lun–Ven 6h–19h · Sam 6h30–18h</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Store 2 -->
+      <div class="bg-surface-container-lowest rounded-xl p-7 heritage-shadow hover:shadow-xl transition-shadow duration-500">
+        <h3 class="font-headline text-xl mb-3">Faubourg de France</h3>
+        <p class="text-on-surface-variant text-sm mb-4">24 Faubourg de France, Belfort</p>
+        <div class="flex items-center gap-2 text-on-surface-variant text-xs">
+          <span class="material-symbols-outlined text-xs">schedule</span>
+          <span>Lun–Sam 7h–19h</span>
+        </div>
+      </div>
+
+      <!-- Store 3 -->
+      <div class="bg-surface-container-lowest rounded-xl p-7 heritage-shadow hover:shadow-xl transition-shadow duration-500">
+        <h3 class="font-headline text-xl mb-3">Bavilliers</h3>
+        <p class="text-on-surface-variant text-sm mb-4">45 Grande Rue Mitterrand, 90800</p>
+        <div class="flex items-center gap-2 text-on-surface-variant text-xs">
+          <span class="material-symbols-outlined text-xs">schedule</span>
+          <span>Lun–Sam 6h30–19h</span>
+        </div>
+      </div>
+
+      <!-- Store 4 — wide -->
+      <div class="md:col-span-2 bg-surface-container-highest rounded-xl p-7 flex items-center justify-between group overflow-hidden relative">
+        <div class="relative z-10">
+          <h3 class="font-headline text-xl mb-1">Besançon</h3>
+          <p class="text-on-surface-variant text-sm">177 rue de Belfort, 25000 · Notre plus récente ouverture</p>
+        </div>
+        <span class="material-symbols-outlined text-primary text-2xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="nos-points-de-vente.html" class="inline-flex items-center gap-2 honey-gradient text-white px-8 py-3 rounded-full text-sm font-semibold hover:opacity-90 transition-all">
+        Voir les 13 boutiques
+        <span class="material-symbols-outlined text-base">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- VALEURS — Three pillars -->
+<!-- ============================================ -->
+<section class="py-24 md:py-32 bg-surface-container-low">
+  <div class="max-w-[1920px] mx-auto px-6 md:px-12">
+    <div class="text-center mb-16 md:mb-20">
+      <span class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-4 block">Nos Engagements</span>
+      <h2 class="font-headline text-4xl md:text-5xl mb-6">Tradition · Innovation · Excellence</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      <div class="text-center md:text-left">
+        <div class="w-16 h-16 honey-gradient rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0">
+          <span class="material-symbols-outlined text-white text-2xl">local_fire_department</span>
+        </div>
+        <h3 class="font-headline text-2xl mb-4">Tradition</h3>
+        <p class="text-on-surface-variant leading-relaxed font-light">Nos boulangers pétrissent, façonnent à la main et cuisent chaque pain dans le respect d'un savoir-faire transmis depuis 1922.</p>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="w-16 h-16 honey-gradient rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0">
+          <span class="material-symbols-outlined text-white text-2xl">auto_awesome</span>
+        </div>
+        <h3 class="font-headline text-2xl mb-4">Innovation</h3>
+        <p class="text-on-surface-variant leading-relaxed font-light">Nos créations sont continuellement affinées et perfectionnées. L'éclair du mois, les entremets de saison — l'audace au service du goût.</p>
+      </div>
+      <div class="text-center md:text-left">
+        <div class="w-16 h-16 honey-gradient rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0">
+          <span class="material-symbols-outlined text-white text-2xl">workspace_premium</span>
+        </div>
+        <h3 class="font-headline text-2xl mb-4">Excellence</h3>
+        <p class="text-on-surface-variant leading-relaxed font-light">Membre du Collège Culinaire de France, fondé par 15 chefs étoilés pour promouvoir l'excellence de l'artisanat français.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- ACTUALITÉS -->
+<!-- ============================================ -->
+<section class="py-24 md:py-32 bg-surface overflow-hidden">
+  <div class="max-w-[1920px] mx-auto px-6 md:px-12">
+    <div class="mb-12 md:mb-16">
+      <span class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-4 block">Actualités</span>
+      <h2 class="font-headline text-4xl md:text-5xl">Les nouvelles de la Maison</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- News 1 -->
+      <article class="group">
+        <div class="aspect-[4/3] overflow-hidden rounded-xl mb-6">
+          <img alt="Égalité professionnelle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiHL82s88tzAhm3SBKTHuB2C2KrSZgiTmNmyQk2LiC1V9VZ4qhbMdhoHvvp8dXzULBPGVrNcglNwlcW_8oS3CuJfUBkoQCjZMlB4NBmjrS7Hh_UtI0cRkLR3whbsYFdD35n8lMCm-9xFbUxW_AKwpy99ljINNBK3h-wZqupqWjM8LgoX5orT2hyNecM49F-cMGkhab4JQsBLXZdEGP6nog-0_eF8w1p6ff3zqk9bpBD5UYVBpBGOFWL50x2JqdBQfMlkd__1wXfu1D"/>
+        </div>
+        <span class="text-primary font-label text-xs tracking-widest uppercase mb-3 block">Engagement Social</span>
+        <h3 class="font-headline text-xl mb-3 group-hover:text-primary transition-colors">Index de l'égalité professionnelle</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Fidèle à ses valeurs familiales, la Maison Demeusy s'engage pour une égalité stricte au sein de ses équipes.</p>
+      </article>
+      <!-- News 2 -->
+      <article class="group">
+        <div class="aspect-[4/3] overflow-hidden rounded-xl mb-6 bg-surface-container-low">
+          <img alt="Éclair Chakra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0K6cid3iLDUcqM4EnBc-R3UrcP_3nuHKRSCoWqyG69dNpGtUdA8LvUbfK3D50s1oGf6aX5BDZG9B_kznPfoxH97xTjIJULb5bQsSxYckBexCycXdgnQ3heC21PIh1WGcd2lGmJOdlDjVqEkOjRh-0xREMNlqIJ307nYw_HSJByC9L04hDHsSQaXSCnVYwTzxPH7wcugvzAQAa8sx0qUVJhjQ30KRHdRE8ICmk2LxOyZXn7Q5WVR48ZdEakVwAIorNCYKO2qXSJoow"/>
+        </div>
+        <span class="text-primary font-label text-xs tracking-widest uppercase mb-3 block">Nouveauté</span>
+        <h3 class="font-headline text-xl mb-3 group-hover:text-primary transition-colors">L'éclair Chakra, une nouveauté délicate</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Une création audacieuse qui allie les saveurs d'Asie à notre savoir-faire pâtissier français.</p>
+      </article>
+      <!-- News 3 -->
+      <article class="group">
+        <div class="aspect-[4/3] overflow-hidden rounded-xl mb-6 bg-surface-container-low">
+          <img alt="Boutique en ligne" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrR9lSEf7SyLxunShEh-ogR1O-cYNXka8C4peBmetCqGCyiJcJ4M8Q5qq_80t9FUjjkKCssijsyDZkI3PMsx8L0zJFO_EWnpWbW3rsQJ-fBzecDW_SU6vDgU5BHYG0pm6LOIS8Ve8kj_9ohn_6jX6Cbm-lYoJt3JwmOitVIFaIjAKGe7BPUbfHlz-i4tOl9INf6RFdG1tRx9AMX4Oj3D0ry22ox3bO1huR7wMjidqpNXwpWiVTGOYACBZ8qCy354dfENFkryPtl0F6"/>
+        </div>
+        <span class="text-primary font-label text-xs tracking-widest uppercase mb-3 block">Digital</span>
+        <h3 class="font-headline text-xl mb-3 group-hover:text-primary transition-colors">Une boutique en ligne !</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Commandez vos créations préférées depuis chez vous et retirez-les en boutique.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- CTA BAND — Recrutement -->
+<!-- ============================================ -->
+<section class="honey-gradient py-16 md:py-20">
+  <div class="max-w-[1920px] mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
+    <div>
+      <h2 class="font-headline text-3xl md:text-4xl text-white mb-3">Rejoignez la Maison Demeusy</h2>
+      <p class="text-white/80 font-light max-w-lg">Boulanger, pâtissier, vendeur ou responsable — nous cherchons des passionnés pour écrire le prochain chapitre.</p>
+    </div>
+    <a href="recrutement.html" class="bg-white text-primary px-10 py-4 rounded-full font-semibold hover:bg-white/90 transition-all text-sm flex-shrink-0">
+      Voir les postes ouverts
+    </a>
+  </div>
+</section>
+</main>
+
+<!-- ============================================ -->
+<!-- FOOTER -->
+<!-- ============================================ -->
+<footer class="bg-surface-dim pt-20 pb-10">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-16 px-6 md:px-12 max-w-[1920px] mx-auto">
+    <div class="md:col-span-1">
+      <span class="font-headline text-2xl mb-4 block text-on-surface">Maison Demeusy</span>
+      <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+        Siège Social :<br/>
+        45 Grande Rue François Mitterrand<br/>
+        90800 Bavilliers, France
+      </p>
+      <div class="flex gap-3">
+        <a href="https://www.instagram.com/boulangeriesdemeusy/" class="w-9 h-9 rounded-full bg-on-surface/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+          <span class="material-symbols-outlined text-base">photo_camera</span>
+        </a>
+        <a href="https://www.facebook.com/BoulangerieDemeusy" class="w-9 h-9 rounded-full bg-on-surface/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+          <span class="material-symbols-outlined text-base">thumb_up</span>
+        </a>
+      </div>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-5 uppercase tracking-widest text-xs text-on-surface">Boutique</h4>
+      <ul class="space-y-3">
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="nos-creations.html">Pains Artisanaux</a></li>
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="nos-creations.html">Viennoiseries</a></li>
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="nos-creations.html">Pâtisserie Fine</a></li>
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="nos-creations.html">Traiteur & Salé</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-5 uppercase tracking-widest text-xs text-on-surface">La Maison</h4>
+      <ul class="space-y-3">
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="notre-histoire.html">Notre Histoire</a></li>
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="nos-points-de-vente.html">Nos Boutiques</a></li>
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="franchise.html">Franchise</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="recrutement.html">Recrutement</a></li>
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-5 uppercase tracking-widest text-xs text-on-surface">Contact</h4>
+      <p class="text-on-surface-variant text-sm mb-3">Questions ou commandes ?</p>
+      <a class="text-primary font-semibold block mb-4" href="mailto:contact@demeusy.fr">contact@demeusy.fr</a>
+      <p class="text-on-surface-variant text-sm">Siège : 03 84 28 02 19</p>
+    </div>
+  </div>
+  <div class="mt-16 px-6 md:px-12 max-w-[1920px] mx-auto border-t border-on-surface/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-on-surface/40 text-xs">© 2025 Maison Demeusy. L'Art de la Boulangerie Française.</p>
+    <div class="flex gap-6 text-xs">
+      <a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">Mentions Légales</a>
+      <a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">Confidentialité</a>
+      <a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">CGV</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

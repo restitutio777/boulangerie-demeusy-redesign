@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Notre Histoire — Maison Demeusy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        "surface-bright":"#fcf9f8","surface-container-lowest":"#ffffff","on-surface":"#1c1b1b","on-primary":"#ffffff","primary-container":"#ff8200","outline":"#8b7263","surface-container-high":"#ebe7e7","primary-fixed":"#ffdcc6","primary":"#954a00","primary-fixed-dim":"#ffb785","surface":"#fcf9f8","surface-container-low":"#f6f3f2","outline-variant":"#dec1af","surface-variant":"#e5e2e1","surface-container-highest":"#e5e2e1","surface-dim":"#dcd9d9","on-primary-container":"#5f2c00","inverse-primary":"#ffb785","inverse-surface":"#313030","inverse-on-surface":"#f3f0ef","surface-tint":"#954a00","on-surface-variant":"#574235","surface-container":"#f0edec"
+      },
+      fontFamily: { headline:["Noto Serif","serif"], body:["Work Sans","sans-serif"], label:["Inter","sans-serif"] },
+      borderRadius: { DEFAULT:"0.125rem", lg:"0.25rem", xl:"0.75rem", full:"9999px" },
+    },
+  },
+};
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  html { scroll-behavior: smooth; }
+  .honey-gradient { background: linear-gradient(45deg, #954a00, #ff8200); }
+  .heritage-shadow { box-shadow: 0 20px 40px rgba(28,27,27,0.06); }
+  .nav-link { position: relative; }
+  .nav-link::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:2px; background:#954a00; transition:width 0.3s ease; }
+  .nav-link:hover::after { width:100%; }
+  .nav-active::after { width:100% !important; }
+  .timeline-line { position: relative; }
+  .timeline-line::before { content:''; position:absolute; left:50%; top:0; bottom:0; width:2px; background: linear-gradient(to bottom, #dec1af33, #954a00, #dec1af33); transform:translateX(-50%); }
+  @media (max-width: 768px) { .timeline-line::before { left:24px; } }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl">
+  <div class="flex justify-between items-center px-6 md:px-12 py-5 w-full max-w-[1920px] mx-auto">
+    <a href="index.html" class="text-2xl font-bold tracking-tighter text-on-surface font-headline">Maison Demeusy</a>
+    <div class="hidden lg:flex items-center gap-10">
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="index.html">Accueil</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="nos-creations.html">Nos Créations</a>
+      <a class="nav-link nav-active font-headline tracking-widest uppercase text-xs text-primary pb-1" href="notre-histoire.html">Histoire & Valeurs</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="nos-points-de-vente.html">Nos Maisons</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="franchise.html">Franchise</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="recrutement.html">Recrutement</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="contact.html">Contact</a>
+    </div>
+    <div class="flex items-center">
+      <button class="material-symbols-outlined text-on-surface hover:text-primary transition-colors lg:hidden">menu</button>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-32">
+
+<!-- Hero -->
+<section class="px-6 md:px-12 max-w-[1920px] mx-auto mb-24">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div>
+      <span class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-6 block">Depuis 1922</span>
+      <h1 class="font-headline text-5xl md:text-7xl tracking-tighter leading-[0.9] mb-8">
+        Un siècle de<br/><span class="italic font-normal">passion.</span>
+      </h1>
+      <p class="text-xl text-on-surface-variant font-light leading-relaxed max-w-lg">
+        De Louis Demeusy, fondateur au retour de la Grande Guerre, à Pierre, qui dirige aujourd'hui 13 boutiques — l'histoire d'une famille unie par l'amour du pain bien fait.
+      </p>
+    </div>
+    <div class="aspect-[4/5] overflow-hidden rounded-xl heritage-shadow">
+      <img alt="Héritage Demeusy" class="w-full h-full object-cover sepia-[20%]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiHL82s88tzAhm3SBKTHuB2C2KrSZgiTmNmyQk2LiC1V9VZ4qhbMdhoHvvp8dXzULBPGVrNcglNwlcW_8oS3CuJfUBkoQCjZMlB4NBmjrS7Hh_UtI0cRkLR3whbsYFdD35n8lMCm-9xFbUxW_AKwpy99ljINNBK3h-wZqupqWjM8LgoX5orT2hyNecM49F-cMGkhab4JQsBLXZdEGP6nog-0_eF8w1p6ff3zqk9bpBD5UYVBpBGOFWL50x2JqdBQfMlkd__1wXfu1D"/>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="py-24 bg-surface-container-low">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-20">
+      <h2 class="font-headline text-4xl md:text-5xl mb-6">Trois Générations</h2>
+      <p class="text-on-surface-variant font-light max-w-lg mx-auto">Chaque génération a apporté sa pierre à l'édifice, entre respect de la tradition et vision de l'avenir.</p>
+    </div>
+
+    <div class="space-y-20 relative timeline-line">
+      <!-- Gen 1 -->
+      <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+        <div class="md:text-right md:pr-12">
+          <div class="inline-block bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Première Génération</div>
+          <h3 class="font-headline text-3xl mb-4">Louis & Marie Demeusy</h3>
+          <p class="text-on-surface-variant leading-relaxed">
+            Au retour de la Première Guerre mondiale, Louis Demeusy fonde la boulangerie dans le vieux Belfort. Avec son épouse Marie, ils posent les fondations d'un savoir-faire qui traversera le siècle. Ensemble, ils ont quatre enfants : Marie-Louise, Jeanne, Madeleine et Claude.
+          </p>
+        </div>
+        <div class="md:pl-12">
+          <div class="bg-surface-container-lowest rounded-xl p-8 heritage-shadow">
+            <span class="font-headline text-6xl text-primary block mb-2">1922</span>
+            <span class="text-on-surface-variant text-sm">Fondation à Belfort</span>
+          </div>
+        </div>
+        <!-- Timeline dot -->
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full honey-gradient border-4 border-surface-container-low z-10 hidden md:block"></div>
+      </div>
+
+      <!-- Gen 2 -->
+      <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+        <div class="md:order-2 md:pl-12">
+          <div class="inline-block bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Deuxième Génération</div>
+          <h3 class="font-headline text-3xl mb-4">Claude & Michèle Demeusy</h3>
+          <p class="text-on-surface-variant leading-relaxed">
+            En 1942, Madeleine rejoint l'entreprise familiale. Claude fait son apprentissage à Dijon avant de rejoindre la maison en 1947. Il succède à son père en 1961. Avec Michèle, née Descourvières, ils ont trois enfants — Marie-Claire, Pierre et Colette — et déménagent l'activité rue Thiers à Belfort en 1970.
+          </p>
+        </div>
+        <div class="md:order-1 md:text-right md:pr-12">
+          <div class="bg-surface-container-lowest rounded-xl p-8 heritage-shadow">
+            <span class="font-headline text-6xl text-primary block mb-2">1961</span>
+            <span class="text-on-surface-variant text-sm">Claude prend la succession</span>
+          </div>
+        </div>
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full honey-gradient border-4 border-surface-container-low z-10 hidden md:block"></div>
+      </div>
+
+      <!-- Gen 3 -->
+      <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+        <div class="md:text-right md:pr-12">
+          <div class="inline-block bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Troisième Génération</div>
+          <h3 class="font-headline text-3xl mb-4">Pierre Demeusy</h3>
+          <p class="text-on-surface-variant leading-relaxed">
+            Ingénieur électrique chez EDF depuis 1992, Pierre reprend la direction en 1997. Sous sa vision, l'entreprise se développe pour atteindre 12 boutiques en 2007. Le siège est transféré à Bavilliers pour regrouper production et administration. Aujourd'hui, 13 Maisons portent le nom Demeusy de Belfort à Besançon.
+          </p>
+        </div>
+        <div class="md:pl-12">
+          <div class="bg-surface-container-lowest rounded-xl p-8 heritage-shadow">
+            <span class="font-headline text-6xl text-primary block mb-2">1997</span>
+            <span class="text-on-surface-variant text-sm">Pierre développe le réseau</span>
+          </div>
+        </div>
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full honey-gradient border-4 border-surface-container-low z-10 hidden md:block"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Valeurs -->
+<section class="py-24 bg-surface">
+  <div class="max-w-[1920px] mx-auto px-6 md:px-12">
+    <div class="text-center mb-20">
+      <span class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-4 block">Nos Piliers</span>
+      <h2 class="font-headline text-4xl md:text-5xl">Tradition · Innovation · Excellence</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-surface-container-low rounded-xl p-10 hover:bg-surface-container transition-colors duration-500">
+        <div class="w-16 h-16 honey-gradient rounded-full flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-white text-2xl">local_fire_department</span>
+        </div>
+        <h3 class="font-headline text-2xl mb-4">Tradition</h3>
+        <p class="text-on-surface-variant leading-relaxed">Nos boulangers experts pétrissent, façonnent à la main et cuisent chaque pain dans le respect d'un savoir-faire transmis depuis quatre générations.</p>
+      </div>
+      <div class="bg-surface-container-low rounded-xl p-10 hover:bg-surface-container transition-colors duration-500">
+        <div class="w-16 h-16 honey-gradient rounded-full flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-white text-2xl">auto_awesome</span>
+        </div>
+        <h3 class="font-headline text-2xl mb-4">Innovation</h3>
+        <p class="text-on-surface-variant leading-relaxed">Nos créations sont continuellement affinées et perfectionnées. L'éclair du mois, les entremets de saison — l'audace créative au service du goût.</p>
+      </div>
+      <div class="bg-surface-container-low rounded-xl p-10 hover:bg-surface-container transition-colors duration-500">
+        <div class="w-16 h-16 honey-gradient rounded-full flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-white text-2xl">workspace_premium</span>
+        </div>
+        <h3 class="font-headline text-2xl mb-4">Excellence</h3>
+        <p class="text-on-surface-variant leading-relaxed">Notre mission est de créer des produits d'excellence pour le plaisir de nos clients. Membre du Collège Culinaire de France, fondé par 15 chefs étoilés.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Collège Culinaire -->
+<section class="py-20 bg-inverse-surface text-inverse-on-surface">
+  <div class="max-w-[1920px] mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-12">
+    <div class="max-w-lg">
+      <span class="font-label text-primary-container uppercase tracking-[0.3em] text-xs mb-4 block">Reconnaissance</span>
+      <h2 class="font-headline text-3xl md:text-4xl mb-6">Membre du Collège Culinaire de France</h2>
+      <p class="text-inverse-on-surface/70 leading-relaxed">Fondé par 15 chefs internationalement reconnus pour promouvoir la qualité de la cuisine et de l'artisanat français. Un gage d'excellence qui honore notre engagement quotidien.</p>
+    </div>
+    <div class="w-48 h-48 rounded-full bg-white/5 flex items-center justify-center flex-shrink-0">
+      <span class="material-symbols-outlined text-primary-container text-7xl">verified</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-dim pt-20 pb-10">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-16 px-6 md:px-12 max-w-[1920px] mx-auto">
+    <div class="md:col-span-1">
+      <span class="font-headline text-2xl mb-4 block">Maison Demeusy</span>
+      <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Siège Social :<br/>45 Grande Rue François Mitterrand<br/>90800 Bavilliers, France</p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-5 uppercase tracking-widest text-xs">Boutique</h4>
+      <ul class="space-y-3">
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="nos-creations.html">Nos Créations</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-5 uppercase tracking-widest text-xs">La Maison</h4>
+      <ul class="space-y-3">
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="notre-histoire.html">Notre Histoire</a></li>
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="nos-points-de-vente.html">Nos Boutiques</a></li>
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="franchise.html">Franchise</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="recrutement.html">Recrutement</a></li>
+        <li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-5 uppercase tracking-widest text-xs">Contact</h4>
+      <a class="text-primary font-semibold block mb-4" href="mailto:contact@demeusy.fr">contact@demeusy.fr</a>
+    </div>
+  </div>
+  <div class="mt-16 px-6 md:px-12 max-w-[1920px] mx-auto border-t border-on-surface/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-on-surface/40 text-xs">© 2025 Maison Demeusy. L'Art de la Boulangerie Française.</p>
+    <div class="flex gap-6 text-xs">
+      <a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">Mentions Légales</a>
+      <a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">Confidentialité</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

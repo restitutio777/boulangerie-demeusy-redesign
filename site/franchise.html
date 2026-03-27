@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Devenir Franchise — Maison Demeusy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        "surface-bright":"#fcf9f8","surface-container-lowest":"#ffffff","on-surface":"#1c1b1b","on-primary":"#ffffff","primary-container":"#ff8200","outline":"#8b7263","surface-container-high":"#ebe7e7","primary-fixed":"#ffdcc6","primary":"#954a00","primary-fixed-dim":"#ffb785","surface":"#fcf9f8","surface-container-low":"#f6f3f2","outline-variant":"#dec1af","surface-variant":"#e5e2e1","surface-container-highest":"#e5e2e1","surface-dim":"#dcd9d9","on-primary-container":"#5f2c00","inverse-primary":"#ffb785","inverse-surface":"#313030","inverse-on-surface":"#f3f0ef","surface-tint":"#954a00","on-surface-variant":"#574235","surface-container":"#f0edec"
+      },
+      fontFamily: { headline:["Noto Serif","serif"], body:["Work Sans","sans-serif"], label:["Inter","sans-serif"] },
+      borderRadius: { DEFAULT:"0.125rem", lg:"0.25rem", xl:"0.75rem", full:"9999px" },
+    },
+  },
+};
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  html { scroll-behavior: smooth; }
+  .honey-gradient { background: linear-gradient(45deg, #954a00, #ff8200); }
+  .heritage-shadow { box-shadow: 0 20px 40px rgba(28,27,27,0.06); }
+  .nav-link { position: relative; }
+  .nav-link::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:2px; background:#954a00; transition:width 0.3s ease; }
+  .nav-link:hover::after { width:100%; }
+  .nav-active::after { width:100% !important; }
+  input:focus, textarea:focus, select:focus { outline: none; border-bottom-color: #954a00; border-bottom-width: 2px; box-shadow: 0 2px 8px rgba(149,74,0,0.08); }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl">
+  <div class="flex justify-between items-center px-6 md:px-12 py-5 w-full max-w-[1920px] mx-auto">
+    <a href="index.html" class="text-2xl font-bold tracking-tighter text-on-surface font-headline">Maison Demeusy</a>
+    <div class="hidden lg:flex items-center gap-10">
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="index.html">Accueil</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="nos-creations.html">Nos Créations</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="notre-histoire.html">Histoire & Valeurs</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="nos-points-de-vente.html">Nos Maisons</a>
+      <a class="nav-link nav-active font-headline tracking-widest uppercase text-xs text-primary pb-1" href="franchise.html">Franchise</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="recrutement.html">Recrutement</a>
+      <a class="nav-link font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-primary transition-colors duration-300 pb-1" href="contact.html">Contact</a>
+    </div>
+    <button class="material-symbols-outlined text-on-surface hover:text-primary transition-colors lg:hidden">menu</button>
+  </div>
+</nav>
+
+<main class="pt-32">
+
+<!-- Hero -->
+<section class="px-6 md:px-12 max-w-[1920px] mx-auto mb-24">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div>
+      <span class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-6 block">Ouvrir une franchise</span>
+      <h1 class="font-headline text-5xl md:text-7xl tracking-tighter leading-[0.9] mb-8">
+        Devenir<br/><span class="italic font-normal">Franchise.</span>
+      </h1>
+      <p class="text-on-surface-variant text-sm uppercase tracking-[0.2em] mb-8 font-label">Tradition · Innovation · Excellence</p>
+      <p class="text-xl text-on-surface-variant font-light leading-relaxed max-w-lg mb-6">
+        Tout commence en 1922 par une baguette... Investir dans une Boulangerie Demeusy, c'est faire le choix de faire le bon choix.
+      </p>
+      <p class="text-on-surface-variant leading-relaxed max-w-lg mb-10">
+        Une excellence reconnue par le Collège Culinaire de France, perpétuée depuis bientôt 100 ans, dédiée au plaisir et à la santé.
+      </p>
+      <a href="#formulaire" class="honey-gradient text-white px-10 py-4 rounded-full font-semibold hover:opacity-90 transition-all text-sm inline-flex items-center gap-2">
+        Rejoindre le groupe
+        <span class="material-symbols-outlined text-base">arrow_downward</span>
+      </a>
+    </div>
+    <div class="aspect-[4/5] overflow-hidden rounded-xl heritage-shadow">
+      <img alt="Boutique Demeusy" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrR9lSEf7SyLxunShEh-ogR1O-cYNXka8C4peBmetCqGCyiJcJ4M8Q5qq_80t9FUjjkKCssijsyDZkI3PMsx8L0zJFO_EWnpWbW3rsQJ-fBzecDW_SU6vDgU5BHYG0pm6LOIS8Ve8kj_9ohn_6jX6Cbm-lYoJt3JwmOitVIFaIjAKGe7BPUbfHlz-i4tOl9INf6RFdG1tRx9AMX4Oj3D0ry22ox3bO1huR7wMjidqpNXwpWiVTGOYACBZ8qCy354dfENFkryPtl0F6"/>
+    </div>
+  </div>
+</section>
+
+<!-- 3 Avantages -->
+<section class="py-24 bg-surface-container-low">
+  <div class="max-w-[1920px] mx-auto px-6 md:px-12">
+    <div class="text-center mb-16">
+      <span class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-4 block">Pourquoi nous rejoindre</span>
+      <h2 class="font-headline text-4xl md:text-5xl">Rejoindre le groupe</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-surface-container-lowest rounded-xl p-10 heritage-shadow text-center hover:shadow-xl transition-shadow duration-300">
+        <div class="w-16 h-16 honey-gradient rounded-full flex items-center justify-center mx-auto mb-8">
+          <span class="material-symbols-outlined text-white text-2xl">workspace_premium</span>
+        </div>
+        <h3 class="font-headline text-2xl mb-4">Des produits d'excellence</h3>
+        <p class="text-on-surface-variant leading-relaxed">Un savoir-faire reconnu par le Collège Culinaire de France. Des recettes uniques transmises depuis quatre générations.</p>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl p-10 heritage-shadow text-center hover:shadow-xl transition-shadow duration-300">
+        <div class="w-16 h-16 honey-gradient rounded-full flex items-center justify-center mx-auto mb-8">
+          <span class="material-symbols-outlined text-white text-2xl">trending_up</span>
+        </div>
+        <h3 class="font-headline text-2xl mb-4">Une réputation solide</h3>
+        <p class="text-on-surface-variant leading-relaxed">Plus d'un siècle d'histoire et 13 boutiques qui témoignent de la confiance de nos clients et de la force de notre marque.</p>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl p-10 heritage-shadow text-center hover:shadow-xl transition-shadow duration-300">
+        <div class="w-16 h-16 honey-gradient rounded-full flex items-center justify-center mx-auto mb-8">
+          <span class="material-symbols-outlined text-white text-2xl">handshake</span>
+        </div>
+        <h3 class="font-headline text-2xl mb-4">Un accompagnement sur mesure</h3>
+        <p class="text-on-surface-variant leading-relaxed">Formation, approvisionnement, marketing — nous vous accompagnons à chaque étape pour garantir votre réussite.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 Étapes -->
+<section class="py-24 bg-inverse-surface text-inverse-on-surface">
+  <div class="max-w-4xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16">
+      <span class="font-label text-primary-container uppercase tracking-[0.3em] text-xs mb-4 block">Le parcours</span>
+      <h2 class="font-headline text-4xl md:text-5xl">4 étapes pour rejoindre<br/><span class="italic font-normal">la Maison</span></h2>
+    </div>
+    <div class="space-y-10">
+      <div class="flex items-start gap-8 group">
+        <div class="w-14 h-14 rounded-full honey-gradient flex items-center justify-center flex-shrink-0 text-white font-headline text-xl">1</div>
+        <div>
+          <h3 class="font-headline text-2xl mb-2 group-hover:text-primary-container transition-colors">Candidature</h3>
+          <p class="text-inverse-on-surface/70">Remplissez le formulaire en bas de cette page. Présentez-nous votre projet et votre motivation.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-8 group">
+        <div class="w-14 h-14 rounded-full honey-gradient flex items-center justify-center flex-shrink-0 text-white font-headline text-xl">2</div>
+        <div>
+          <h3 class="font-headline text-2xl mb-2 group-hover:text-primary-container transition-colors">Entretien</h3>
+          <p class="text-inverse-on-surface/70">Vous serez contacté pour un entretien approfondi afin de mieux nous connaître mutuellement.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-8 group">
+        <div class="w-14 h-14 rounded-full honey-gradient flex items-center justify-center flex-shrink-0 text-white font-headline text-xl">3</div>
+        <div>
+          <h3 class="font-headline text-2xl mb-2 group-hover:text-primary-container transition-colors">Immersion</h3>
+          <p class="text-inverse-on-surface/70">Vous rencontrerez 2 franchisés du groupe en immersion, puis Monsieur Pierre Demeusy en personne.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-8 group">
+        <div class="w-14 h-14 rounded-full honey-gradient flex items-center justify-center flex-shrink-0 text-white font-headline text-xl">4</div>
+        <div>
+          <h3 class="font-headline text-2xl mb-2 group-hover:text-primary-container transition-colors">Bienvenue dans la Maison !</h3>
+          <p class="text-inverse-on-surface/70">Signature du contrat et début de votre aventure au sein du groupe Demeusy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Formulaire -->
+<section id="formulaire" class="py-24 bg-surface">
+  <div class="max-w-3xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16">
+      <span class="font-label text-primary uppercase tracking-[0.3em] text-xs mb-4 block">Candidature</span>
+      <h2 class="font-headline text-4xl md:text-5xl mb-6">Rejoindre le groupe</h2>
+      <p class="text-on-surface-variant font-light">Remplissez ce formulaire et nous vous recontacterons dans les plus brefs délais.</p>
+    </div>
+
+    <div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 heritage-shadow">
+      <form class="space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="font-label text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Prénom</label>
+            <input class="w-full bg-transparent border-0 border-b border-outline/20 py-3 text-on-surface placeholder:text-on-surface-variant/40" type="text" placeholder="Votre prénom"/>
+          </div>
+          <div>
+            <label class="font-label text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Nom</label>
+            <input class="w-full bg-transparent border-0 border-b border-outline/20 py-3 text-on-surface placeholder:text-on-surface-variant/40" type="text" placeholder="Votre nom"/>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="font-label text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Email</label>
+            <input class="w-full bg-transparent border-0 border-b border-outline/20 py-3 text-on-surface placeholder:text-on-surface-variant/40" type="email" placeholder="votre@email.fr"/>
+          </div>
+          <div>
+            <label class="font-label text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Téléphone</label>
+            <input class="w-full bg-transparent border-0 border-b border-outline/20 py-3 text-on-surface placeholder:text-on-surface-variant/40" type="tel" placeholder="06 XX XX XX XX"/>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="font-label text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Avez-vous un local ?</label>
+            <select class="w-full bg-transparent border-0 border-b border-outline/20 py-3 text-on-surface">
+              <option>Non</option>
+              <option>Oui</option>
+            </select>
+          </div>
+          <div>
+            <label class="font-label text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Si oui, adresse du local</label>
+            <input class="w-full bg-transparent border-0 border-b border-outline/20 py-3 text-on-surface placeholder:text-on-surface-variant/40" type="text" placeholder="Adresse complète"/>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="font-label text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Expérience en boulangerie / pâtisserie ?</label>
+            <select class="w-full bg-transparent border-0 border-b border-outline/20 py-3 text-on-surface">
+              <option>Non</option>
+              <option>Oui</option>
+            </select>
+          </div>
+          <div>
+            <label class="font-label text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Si oui, nombre d'années</label>
+            <input class="w-full bg-transparent border-0 border-b border-outline/20 py-3 text-on-surface placeholder:text-on-surface-variant/40" type="number" placeholder="Ex: 5"/>
+          </div>
+        </div>
+        <div>
+          <label class="font-label text-xs text-on-surface-variant uppercase tracking-widest mb-2 block">Votre message</label>
+          <textarea class="w-full bg-transparent border-0 border-b border-outline/20 py-3 text-on-surface placeholder:text-on-surface-variant/40 resize-none" rows="4" placeholder="Parlez-nous de votre projet..."></textarea>
+        </div>
+        <button type="submit" class="w-full honey-gradient text-white py-4 rounded-full font-semibold hover:opacity-90 transition-all text-sm">
+          Envoyer ma candidature
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-dim pt-20 pb-10">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-16 px-6 md:px-12 max-w-[1920px] mx-auto">
+    <div class="md:col-span-1">
+      <span class="font-headline text-2xl mb-4 block">Maison Demeusy</span>
+      <p class="text-on-surface-variant text-sm leading-relaxed">Siège Social :<br/>45 Grande Rue François Mitterrand<br/>90800 Bavilliers, France</p>
+    </div>
+    <div><h4 class="font-semibold mb-5 uppercase tracking-widest text-xs">Boutique</h4><ul class="space-y-3"><li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="nos-creations.html">Nos Créations</a></li></ul></div>
+    <div><h4 class="font-semibold mb-5 uppercase tracking-widest text-xs">La Maison</h4><ul class="space-y-3"><li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="notre-histoire.html">Notre Histoire</a></li><li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="nos-points-de-vente.html">Nos Boutiques</a></li><li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="franchise.html">Franchise</a></li><li><a class="text-on-surface-variant text-sm hover:text-primary transition-colors" href="contact.html">Contact</a></li></ul></div>
+    <div><h4 class="font-semibold mb-5 uppercase tracking-widest text-xs">Contact</h4><a class="text-primary font-semibold block" href="mailto:contact@demeusy.fr">contact@demeusy.fr</a></div>
+  </div>
+  <div class="mt-16 px-6 md:px-12 max-w-[1920px] mx-auto border-t border-on-surface/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-on-surface/40 text-xs">© 2025 Maison Demeusy. L'Art de la Boulangerie Française.</p>
+    <div class="flex gap-6 text-xs"><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">Mentions Légales</a><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">Confidentialité</a></div>
+  </div>
+</footer>
+</body>
+</html>
