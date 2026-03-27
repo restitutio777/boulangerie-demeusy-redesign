@@ -48,10 +48,29 @@ tailwind.config = {
       <a class="nav-link nav-active font-headline tracking-widest uppercase text-xs text-[#b8772e] pb-1" href="contact.html">Contact</a>
     </div>
     <div class="flex items-center">
-      <button class="material-symbols-outlined text-on-surface hover:text-[#b8772e] transition-colors lg:hidden">menu</button>
+      <button id="menu-btn" class="material-symbols-outlined text-on-surface hover:text-[#b8772e] transition-colors lg:hidden">menu</button>
     </div>
   </div>
 </nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] pointer-events-none opacity-0 transition-opacity duration-300">
+  <div class="absolute inset-0 bg-black/60" onclick="closeMobileMenu()"></div>
+  <div id="mobile-drawer" class="absolute top-0 right-0 h-full w-72 bg-surface shadow-2xl translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="flex justify-end p-6">
+      <button onclick="closeMobileMenu()" class="material-symbols-outlined text-on-surface hover:text-[#b8772e] transition-colors">close</button>
+    </div>
+    <div class="flex flex-col gap-6 px-8 pt-4">
+      <a class="font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-[#b8772e] transition-colors" href="index.html">Accueil</a>
+      <a class="font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-[#b8772e] transition-colors" href="nos-creations.html">Nos Créations</a>
+      <a class="font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-[#b8772e] transition-colors" href="notre-histoire.html">Histoire & Valeurs</a>
+      <a class="font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-[#b8772e] transition-colors" href="nos-points-de-vente.html">Nos Maisons</a>
+      <a class="font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-[#b8772e] transition-colors" href="franchise.html">Franchise</a>
+      <a class="font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-[#b8772e] transition-colors" href="recrutement.html">Recrutement</a>
+      <a class="font-headline tracking-widest uppercase text-xs text-on-surface/80 hover:text-[#b8772e] transition-colors" href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
 
 <main class="pt-32">
 
@@ -200,5 +219,10 @@ tailwind.config = {
     <div class="flex gap-6 text-xs"><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">Mentions Légales</a><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">Confidentialité</a></div>
   </div>
 </footer>
+<script>
+function openMobileMenu(){var m=document.getElementById('mobile-menu'),d=document.getElementById('mobile-drawer');m.classList.remove('pointer-events-none','opacity-0');d.classList.remove('translate-x-full');document.body.style.overflow='hidden';}
+function closeMobileMenu(){var m=document.getElementById('mobile-menu'),d=document.getElementById('mobile-drawer');d.classList.add('translate-x-full');m.classList.add('opacity-0');setTimeout(function(){m.classList.add('pointer-events-none');},300);document.body.style.overflow='';}
+document.getElementById('menu-btn').addEventListener('click',openMobileMenu);
+</script>
 </body>
 </html>
